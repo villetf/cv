@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ } 
+
+html, body {
+   height: 100%;
+   overflow-x: hidden;
+   font-family: "Inter Tight", sans-serif;
+   font-optical-sizing: auto;
+ }
+
+section {
+   height: 97%;
+   display: flex;
+   flex-direction: column;
+}
+
+#nameSection {
+   margin-top: 2%;
+}
+
+.halves {
+   flex-basis: 50%;
+   min-width: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+
+
+.leftHalf {
+   background-color: pink;
+   order: 2;
+}
+
+.rightHalf {
+   /* background-color: rgb(205, 236, 250); */
+   background-color: rgb(197,213,230);
+   order: 1;
+}
+
+#nameText {
+   font-weight: 400;
+   font-size: 50px;
+}
+
+#nameSubtext {
+   font-weight: 400;
+   font-size: 25px;
+   margin-top: 10px;
+}
+
+#portrait {
+   /* height: 50vh; */
+   /* width: 100vw; */
+   height: 60vh;
+}
+
+header {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 10px;
+   background-color: rgb(197,213,230);
+}
+
+.icon {
+   height: 21px;
+   color: black;
+}
+
+#introTextSection {
+   justify-content: center;
+   align-items: center;
+}
+
+#introText {
+   text-align: center;
+   margin: 0 20vw;
+   font-size: x-large;
+}
+
+#githubSection {
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+#githubSection h1 {
+   margin-bottom: 50px;
+}
+
+#githubContainer {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   
+   width: 75%;
+   height: 75%;   
+   overflow-y: scroll;
+   flex-wrap: wrap;
+}
+
+.githubDiv {
+   border-radius: 35px;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   flex-direction: column;
+   width: 300px;
+   height: 200px;
+   background-color: rgb(14, 17, 22);
+   color: white;
+   margin: 10px;
+}
+
+.githubDiv h3, .githubDiv p {
+   margin: 5%;
+}
+
+@media screen and (min-width: 768px) {
+   section {
+      flex-direction: row;
+   }
+
+   .leftHalf {
+      order: 1;
+   }
+
+   .rightHalf {
+      order: 2;
+   }
+
+   #portrait {
+      height: 50vh;
+      width: auto;
+   }
+   
+   .halves div {
+      text-align: right;
+   }
+
+   header {
+      top: 0;
+      height: fit-content;
+   }
+
+   #introText {
+      font-size: xx-large;
+   }
+
+   .githubDiv {
+      width: 500px;
+      height: 300px;
+   }
+
+   /* #githubContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+   } */
+}
