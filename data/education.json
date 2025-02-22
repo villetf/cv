@@ -1,20 +1,26 @@
 [
    {
-      "educationTitle": "Militär grundutbildning, informationssystemsassistent",
-      "school": "Bodens Artilleriregemente, Boden",
+      "title": "Militär grundutbildning, informationssystemsassistent",
+      "place": "Bodens Artilleriregemente, Boden",
       "duration": "Augusti 2020-Maj 2021",
-      "educationDesctiption": "Som informationssystemsassistent är man specialiserad på att driftsätta, underhålla och felsöka ett mobilt IT-system på en bataljonsstabsplats."
+      "startTime": "2020-08",
+      "endTime": "2021-04",
+      "description": "Som informationssystemsassistent är man specialiserad på att driftsätta, underhålla och felsöka ett mobilt IT-system på en bataljonsstabsplats."
    },
    {
-      "educationTitle": "Estetiskt program, spetsutbildning i film & regi",
-      "school": "S:t Eriks Gymnasium, Stockholm",
+      "title": "Estetiskt program, spetsutbildning i film & regi",
+      "place": "S:t Eriks Gymnasium, Stockholm",
       "duration": "Augusti 2017-juni 2020",
-      "educationDesctiption": "Förutom grundläggande högskolebehörighet utbildades i hela filmskapandeprocessen med professionella metoder, från idé till färdig film."
+      "startTime": "2017-08",
+      "endTime": "2020-06",
+      "description": "Förutom grundläggande högskolebehörighet utbildades i hela filmskapandeprocessen med professionella metoder, från idé till färdig film."
    },
    {
-      "educationTitle": "Grundskola",
-      "school": "Fjärdhundraskolan",
+      "title": "Grundskola",
+      "place": "Fjärdhundraskolan",
       "duration": "2008-2017",
-      "educationDesctiption": null
+      "startTime": "2017-01",
+      "endTime": "2017-06",
+      "description": null
    }
 ]
