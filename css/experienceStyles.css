@@ -1,0 +1,168 @@
+#experienceSection h1 {
+   margin-bottom: 50px;
+}
+
+#experienceContainer {
+   width: 85%;
+   height: 75%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#contentContainer {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+#eventsContainer {
+   /* position: absolute;
+   top: -10px;
+   width: 100%;
+   height: 20px; */
+   position: absolute;
+   transform: translateY(-30px);
+   /* width: 100%; */
+   height: 50px;  /* Justera vid behov */
+   margin-top: 10px;
+}
+
+.eventBar {
+   position: absolute;
+   height: 20px;
+   background-color: blue;
+   border-radius: 5px;
+}
+
+#timelineContainer {
+   width: 100%;
+   background-color: firebrick;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+}
+
+#timeline {
+   height: 2px;
+   width: 100%;
+   background-color: black;
+   position: relative;
+   display: flex;
+}
+
+#yearsContainer {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+}
+
+.yearLabel {
+   text-align: left;
+   flex: 1;
+   font-size: 14px;
+   display: flex;
+   height: 5px;
+   border-left: 1px solid black;
+   position: relative;
+}
+
+.yearText {
+   flex-grow: 1;
+   position: absolute;
+   margin-top: 3px;
+}
+
+.month {
+   flex-grow: 1;
+   height: 100%;
+}
+
+#eventsContainer {
+   position: absolute;
+   top: -10px;
+   width: 100%;
+   height: 20px;
+}
+
+.event {
+   position: absolute;
+   height: 8px;
+   border-radius: 4px;
+   font-size: 12px;
+   padding: 2px 5px;
+   color: white;
+}
+
+.work {
+   background-color: blue;
+}
+
+.education {
+   background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#workContainer {
+   background-color: khaki;
+   height: 100%;
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+}
+
+#workContainer h3 {
+   margin-bottom: 20px;
+}
+
+#educationContainer {
+   background-color: aqua;
+   height: 100%;
+   width: 40%;
+}
+
+#expTable {
+   display: grid;
+   gap: 10px;
+}
+
+.expRow {
+   display: grid;
+   grid-template-columns: 1fr 15px 2fr;
+}
+
+.timeCell {
+   text-align: right;
+   margin-right: 10px;
+}
+
+.clickArrow {
+   margin-top: 1.5px;
+}
+
+
+.titleCell {
+
+}
+
+.hidden {
+   display: none;
+}
