@@ -14,7 +14,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   position: relative;
+   /* position: relative; */
 }
 
 #eventsContainer {
@@ -22,36 +22,41 @@
    top: -10px;
    width: 100%;
    height: 20px; */
-   position: absolute;
-   transform: translateY(-30px);
-   /* width: 100%; */
-   height: 50px;  /* Justera vid behov */
-   margin-top: 10px;
+   width: 100%;
+   height: 50px;
+   /* margin-top: 10px; */
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-auto-rows: min-content;
+   gap: 5px;
+   position: relative;
+   width: 100%;
 }
 
 .eventBar {
-   position: absolute;
-   height: 20px;
    background-color: blue;
+   color: white;
+   padding: 5px;
    border-radius: 5px;
+   text-align: center;
 }
 
 #timelineContainer {
    width: 100%;
-   background-color: firebrick;
+   /* background-color: firebrick; */
    display: flex;
    flex-direction: column;
    justify-content: center;
    position: relative;
 }
 
-#timeline {
+/* #timeline {
    height: 2px;
    width: 100%;
    background-color: black;
    position: relative;
    display: flex;
-}
+} */
 
 #yearsContainer {
    display: flex;
@@ -87,14 +92,14 @@
    height: 20px;
 }
 
-.event {
+/* .event {
    position: absolute;
    height: 8px;
    border-radius: 4px;
    font-size: 12px;
    padding: 2px 5px;
    color: white;
-}
+} */
 
 .work {
    background-color: blue;
@@ -107,6 +112,49 @@
 
 
 
+
+#timeline {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   overflow-x: scroll;
+   padding: 20px;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+   grid-auto-rows: minmax(50px, auto);
+   gap: 5px;
+   position: relative;
+   overflow-x: scroll;
+}
+
+.year {
+   grid-column: span 12;
+   text-align: center;
+   font-weight: bold;
+   /* background: black; */
+   color: white;
+   padding: 5px;
+}
+
+.month {
+   text-align: center;
+   font-size: 12px;
+   background: lightgray;
+   /* border: 1px solid black; */
+   padding: 2px;
+}
+
+.event {
+   background-color: blue;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 5px;
+   white-space: nowrap;
+   text-align: center;
+}
 
 
 
