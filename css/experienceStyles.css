@@ -1,9 +1,22 @@
 #experienceSection h1 {
-   margin-bottom: 50px;
+   margin-bottom: 10px;
+}
+
+#radioDiv {
+   display: flex;
+   align-items: center;
+}
+
+#radioDiv label {
+   margin-right: 15px;
+}
+
+#radioDiv input {
+   margin-right: 3px;
 }
 
 #experienceContainer {
-   width: 85%;
+   width: 100%;
    height: 75%;
    display: flex;
    justify-content: space-evenly;
@@ -14,146 +27,118 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   /* position: relative; */
-}
-
-#eventsContainer {
-   /* position: absolute;
-   top: -10px;
-   width: 100%;
-   height: 20px; */
-   width: 100%;
-   height: 50px;
-   /* margin-top: 10px; */
-   display: grid;
-   grid-template-columns: repeat(12, 1fr);
-   grid-auto-rows: min-content;
-   gap: 5px;
-   position: relative;
-   width: 100%;
-}
-
-.eventBar {
-   background-color: blue;
-   color: white;
-   padding: 5px;
-   border-radius: 5px;
-   text-align: center;
 }
 
 #timelineContainer {
-   width: 100%;
-   /* background-color: firebrick; */
+   width: 100%;   
    display: flex;
    flex-direction: column;
    justify-content: center;
    position: relative;
+   overflow-x: scroll;
+   height: 500px;
 }
-
-/* #timeline {
-   height: 2px;
-   width: 100%;
-   background-color: black;
-   position: relative;
-   display: flex;
-} */
 
 #yearsContainer {
-   display: flex;
-   justify-content: space-between;
-   position: relative;
+   display: grid;
+   grid-template-rows: auto auto auto;
+   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+   grid-auto-flow: column;
+   width: 200%;
 }
 
-.yearLabel {
-   text-align: left;
-   flex: 1;
-   font-size: 14px;
-   display: flex;
+.eventHolder, .yearHolder {
    height: 5px;
-   border-left: 1px solid black;
+   width: 100%;
+}
+
+.eventHolder {
+   background-color: darkgoldenrod;
+}
+
+.yearHolder {
+   overflow: visible;
+}
+
+.eventDiv {
    position: relative;
 }
 
-.yearText {
-   flex-grow: 1;
+.eventMarker {
    position: absolute;
-   margin-top: 3px;
-}
-
-.month {
-   flex-grow: 1;
-   height: 100%;
-}
-
-#eventsContainer {
-   position: absolute;
-   top: -10px;
-   width: 100%;
-   height: 20px;
-}
-
-/* .event {
-   position: absolute;
-   height: 8px;
-   border-radius: 4px;
-   font-size: 12px;
-   padding: 2px 5px;
+   bottom: 100%;
+   left: 50%;
+   background-color: black;
    color: white;
+   padding: 4px;
+   border-radius: 4px;
+   white-space: nowrap;
+   /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 3% 80%, 0% 100%, 0% 80%); */
+   /* margin-top: 5px; */
+   /* height: fit-content; */
+   font-size: small;
+   transition: height 2.5s ease-in-out;
+}
+
+.expandedEvent {
+   /* height: 200px; */
+   z-index: 5;
+   min-width: fit-content;
+   animation: eventHeight 0.4s ease-in-out forwards;
+   overflow: hidden;
+}
+
+.collapseEvent {
+   animation: decreaseEventHeight 0.4s ease-in-out forwards;
+}
+
+@keyframes eventHeight {
+   from { height: 23.5px; }
+   to { height: 200px; }
+}
+
+@keyframes decreaseEventHeight {
+   from { height: 200px; }
+   to { height: 23.5px; }
+}
+
+
+/* .eventMarker:hover {
+   height: 200px;
+   z-index: 5;
+   min-width: fit-content;
 } */
 
-.work {
-   background-color: blue;
-}
-
-.education {
-   background-color: red;
-}
-
-
-
-
-
-#timeline {
-   display: flex;
-   justify-content: center;
-   width: 100%;
-   overflow-x: scroll;
-   padding: 20px;
-}
-
-.grid {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-   grid-auto-rows: minmax(50px, auto);
-   gap: 5px;
-   position: relative;
-   overflow-x: scroll;
-}
-
-.year {
-   grid-column: span 12;
-   text-align: center;
-   font-weight: bold;
-   /* background: black; */
-   color: white;
-   padding: 5px;
+.expandedDiv {
+   width: 400px;
+   white-space: wrap;
 }
 
 .month {
    text-align: center;
    font-size: 12px;
    background: lightgray;
-   /* border: 1px solid black; */
    padding: 2px;
-}
-
-.event {
-   background-color: blue;
-   color: white;
-   padding: 5px 10px;
-   border-radius: 5px;
+   overflow: visible;
    white-space: nowrap;
-   text-align: center;
+}
+
+.january {
+   grid-column: span 2;
+   text-align: left;
+}
+
+.flex {
+   display: flex;
+   align-items: center;
+}
+
+.flex i {
+   margin-right: 7px;
+}
+
+.fa-map-pin {
+   rotate: 10deg;
 }
 
 
@@ -166,8 +151,7 @@
 
 
 
-
-#workContainer {
+.experienceContainer {
    background-color: khaki;
    height: 100%;
    width: 40%;
@@ -181,20 +165,25 @@
    margin-bottom: 20px;
 }
 
-#educationContainer {
+/* #educationContainer {
    background-color: aqua;
    height: 100%;
    width: 40%;
-}
+} */
 
 #expTable {
    display: grid;
    gap: 10px;
+   width: 100%;
+   overflow-y: scroll;
 }
+
+
 
 .expRow {
    display: grid;
    grid-template-columns: 1fr 15px 2fr;
+   width: 100%;
 }
 
 .timeCell {
@@ -206,9 +195,8 @@
    margin-top: 1.5px;
 }
 
-
 .titleCell {
-
+   /* width: 100%; */
 }
 
 .hidden {
