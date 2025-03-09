@@ -2,7 +2,7 @@
    {
       "title": "Systemtekniker, Operations Center",
       "place": "IT-förvaltningen, Region Kalmar Län",
-      "duration": "Apr 2022-Aug 2024",
+      "duration": "apr 2022–aug 2024",
       "startTime": "2022-04",
       "endTime": "2024-08",
       "description": "Arbetade på regionens Operations Center, med ansvar för infrastruktur- och applikationsövervakning samt drift och konfigurering av övervakningssystem. Arbetade även med att utveckla automatiserings- och effektiviseringslösningar för det egna och andra team."
@@ -10,7 +10,7 @@
    {
       "title": "Samband/IS-soldat, G6",
       "place": "Bodens Artilleriregemente",
-      "duration": "Maj 2021-Mars 2022",
+      "duration": "maj 2021–mars 2022",
       "startTime": "2021-05",
       "endTime": "2022-03",
       "description": "Var soldat vid regementsstabens sambandsavdelning med uppgift att drifta och underhålla förbandets lednings- och sambandsssystem, med stort fokus på tillgänglighet, robusthet och sekretess."
@@ -18,15 +18,15 @@
    {
       "title": "Del av O-Ringens marknadsföringsgrupp",
       "place": "O-Ringen Uppsala 2022",
-      "duration": "Juli 2019-Juli 2022",
+      "duration": "juli 2019–juli 2022",
       "startTime": "2019-07",
-      "endTime": "2022-06",
+      "endTime": "2022-07",
       "description": "Producerade ideellt YouTubeklipp inför O-Ringen 2022, världens största orienteringstävling. Totalt publicerades 51 klipp med sammanlagt 165 000 visningar som publicerades på O-Ringens YouTubekanal."
    },
    {
       "title": "Volontär, fotografavdelningen",
       "place": "Stockholm International Film Festival",
-      "duration": "Nov 2019",
+      "duration": "nov 2019",
       "startTime": "2019-11",
       "endTime": "2019-11",
       "description": "Försåg filmfestivalen med högkvalitativa stillbilder från event för publicering i marknadsföring och sociala medier."
@@ -34,23 +34,23 @@
    {
       "title": "Arbete på tomatodling",
       "place": "Sörgården Grönt, Fjärdhundra",
-      "duration": "Somrarna 2018, 2019",
-      "startTime": "2019-06",
-      "endTime": "2018-08",
-      "description": "Plockade, sorterade och packade tomater, samt ägnade mig åt underhåll av odlingarna."
-   },
-   {
-      "title": "Arbete på tomatodling",
-      "place": "Sörgården Grönt, Fjärdhundra",
-      "duration": "Somrarna 2018, 2019",
+      "duration": "sommaren 2019",
       "startTime": "2019-06",
       "endTime": "2019-08",
       "description": "Plockade, sorterade och packade tomater, samt ägnade mig åt underhåll av odlingarna."
    },
    {
+      "title": "Arbete på tomatodling",
+      "place": "Sörgården Grönt, Fjärdhundra",
+      "duration": "sommaren 2018",
+      "startTime": "2018-06",
+      "endTime": "2018-08",
+      "description": "Plockade, sorterade och packade tomater, samt ägnade mig åt underhåll av odlingarna."
+   },
+   {
       "title": "Volontär, biografavdelningen",
       "place": "Stockholm International Film Festival",
-      "duration": "Nov 2017, nov 2018",
+      "duration": "nov 2018",
       "startTime": "2018-11",
       "endTime": "2018-11",
       "description": "Sålde, bokade om och skannade biljetter till festivalens visningar, samt ägnade mig åt övrig kundservice."
@@ -58,7 +58,7 @@
    {
       "title": "Volontär, biografavdelningen",
       "place": "Stockholm International Film Festival",
-      "duration": "Nov 2017, nov 2018",
+      "duration": "nov 2017",
       "startTime": "2017-11",
       "endTime": "2017-11",
       "description": "Sålde, bokade om och skannade biljetter till festivalens visningar, samt ägnade mig åt övrig kundservice."
