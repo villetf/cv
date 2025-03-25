@@ -1,26 +1,34 @@
 [
    {
-      "title": "Militär grundutbildning, informationssystemsassistent",
-      "place": "Bodens Artilleriregemente, Boden",
-      "duration": "augusti 2020–maj 2021",
-      "startTime": "2020-08",
-      "endTime": "2021-04",
-      "description": "Som informationssystemsassistent är man specialiserad på att driftsätta, underhålla och felsöka ett mobilt IT-system på en bataljonsstabsplats."
+      "title": "YH-utbildning – Webbutvecklare .NET",
+      "place": "Jönköping University/Campus Värnamo",
+      "duration": "aug 2024-juni 2026",
+      "startTime": "2024-08",
+      "endTime": "2026-06",
+      "description": "Praktiskt inriktad utbildning med fokus på att utveckla moderna webbapplikationer. Backend byggs i .NET-plattformen, medan frontend utvecklas med moderna JavaScript-ramverk. Stort fokus ligger på samarbete, kodkvalitet och branschrelevanta arbetsmetoder, exempelvis agilt arbete och versionshantering."
    },
    {
-      "title": "Estetiskt program, spetsutbildning i film & regi",
+      "title": "Militär grundutbildning – Informationssystemsassistent",
+      "place": "Bodens Artilleriregemente, Boden",
+      "duration": "aug 2020–maj 2021",
+      "startTime": "2020-08",
+      "endTime": "2021-04",
+      "description": "Utbildades i driftsättning, underhåll och felsökning av mobila IT-system på bataljonsnivå, som del av min värnplikt. Lärde mig att hantera nätverk, kommunikationsutrustning och informationssäkerhet i krävande miljöer."
+   },
+   {
+      "title": "Estetiskt program – Spetsutbildning i film & regi",
       "place": "S:t Eriks Gymnasium, Stockholm",
-      "duration": "augusti 2017–juni 2020",
+      "duration": "aug 2017–juni 2020",
       "startTime": "2017-08",
-      "endTime": "2020-06",
-      "description": "Förutom grundläggande högskolebehörighet utbildades i hela filmskapandeprocessen med professionella metoder, från idé till färdig film."
+      "endTime": "2020-05",
+      "description": "Fördjupad utbildning inom filmskapande med professionella arbetsmetoder. Tränades i hela produktionsprocessen, från idé och manus till inspelning, redigering och färdig film. Tog gymnasieexamen med grundläggande högskolebehörighet."
    },
    {
       "title": "Grundskola",
       "place": "Fjärdhundraskolan",
       "duration": "2008–2017",
       "startTime": "2017-01",
-      "endTime": "2017-06",
-      "description": null
+      "endTime": "2017-05",
+      "description": "Grundskola, årskurs F-9."
    }
 ]
