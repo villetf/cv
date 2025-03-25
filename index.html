@@ -36,20 +36,19 @@
 
    <section id="introTextSection" style="background-color: blue;">
       <p id="introText">
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae vel aspernatur corporis delectus nesciunt, est, modi in fuga assumenda repellat et nihil, sequi suscipit praesentium cumque placeat! Consectetur harum animi sit repellat vero magnam excepturi error, beatae voluptate tempora ratione numquam illo possimus libero quaerat voluptatum sapiente recusandae nulla atque.   
-      </p>
+         Jag heter Vilhelm, och jag är en webbutvecklingsstudent baserad i Jönköping. Det viktigaste för mig är att alltid fortsätta lära mig och att alltid tänka kreativt, och jag tror att man med de egenskaperna kan lösa alla problem som finns. Jag vill bygga webbapplikationer som både förenklar och förbättrar människors liv och som man i efterhand undrar hur man har kunnat klara sig utan.</p>
    </section>
 
    <section id="experienceSection" style="background-color: green;">
       <h1>Min erfarenhet</h1>
-      <p>Visa som:</p>
+      <p id="showAsText">Visa som:</p>
       <div id="radioDiv">
          <input type="radio" id="timelineRadio" name="viewSelection" checked>
          <label for="timelineRadio">Tidslinje</label>
          <input type="radio" id="listRadio" name="viewSelection">
          <label for="listRadio">Lista</label>
       </div>
-      <div id="experienceContainer">
+      <div id="allExperienceContainer">
       </div>
    </section>
 
@@ -59,7 +58,29 @@
    </section>
 
    <section id="contactSection" style="background-color: yellow;">
+      
+      <div class="halves">
+         <h1 id="contactTitle">Vill du veta mer? Kontakta mig!</h1>
+      </div>
+      <div class="halves">
+         <div class="flex">
+            <div class="flex contactInfo">
+               <i class="fa-solid fa-envelope letter"></i>
+               <p><a href="mailto:ville@fontell.se">ville@fontell.se</a></p>
+            </div>
+            <div class="flex contactInfo">
+               <i class="fa-solid fa-mobile-screen-button phone"></i>
+               <p><a href="tel:+46761626837">076-162 68 37</a></p>
+            </div>
+         </div>
 
+         <div class="flex logoDiv">
+            <a href="https://www.linkedin.com/in/vilhelm-fontell/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/villetf" target="_blank"><i class="fa-brands fa-github"></i></a>
+         </div>
+      </div>
+
+      
    </section>
 </body>
 </html>
