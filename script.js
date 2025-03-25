@@ -7,17 +7,25 @@ import { insertTimeline } from './modules/insertTimeline.js';
 
 const workExperience = await getWorkExperience();
 const education = await getEducation();
-insertTimeline(workExperience, education);
 
-document.getElementById('timelineRadio').onclick = () => {
-   document.getElementById('experienceContainer').innerText = '';
+if (window.innerWidth > 768) {
    insertTimeline(workExperience, education);
-};
 
-document.getElementById('listRadio').onclick = () => {
-   document.getElementById('experienceContainer').innerText = '';
+   document.getElementById('timelineRadio').onclick = () => {
+      document.getElementById('allExperienceContainer').innerText = '';
+      insertTimeline(workExperience, education);
+   };
+
+   document.getElementById('listRadio').onclick = () => {
+      document.getElementById('allExperienceContainer').innerText = '';
+      insertExperienceList(workExperience, education);
+   };
+} else {
    insertExperienceList(workExperience, education);
-};
+   document.getElementById('showAsText').remove();
+   document.getElementById('radioDiv').remove();
+
+}
 
 const repos = await getGithubRepos();
 for (const repo in repos) {
