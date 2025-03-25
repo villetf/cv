@@ -15,11 +15,12 @@
    margin-right: 3px;
 }
 
-#experienceContainer {
+#allExperienceContainer {
    width: 100%;
    height: 75%;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
+   margin-top: 50px;
 }
 
 #contentContainer {
@@ -35,7 +36,7 @@
    flex-direction: column;
    justify-content: center;
    position: relative;
-   overflow-x: scroll;
+   overflow-x: auto;
    height: 500px;
 }
 
@@ -67,17 +68,19 @@
 .eventMarker {
    position: absolute;
    bottom: 100%;
-   left: 50%;
    background-color: black;
    color: white;
    padding: 4px;
    border-radius: 4px;
    white-space: nowrap;
-   /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 3% 80%, 0% 100%, 0% 80%); */
-   /* margin-top: 5px; */
-   /* height: fit-content; */
    font-size: small;
    transition: height 2.5s ease-in-out;
+   overflow: hidden;
+   
+}
+
+.fadedMarkerText {
+   mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
 }
 
 .expandedEvent {
@@ -103,15 +106,17 @@
 }
 
 
-/* .eventMarker:hover {
-   height: 200px;
-   z-index: 5;
-   min-width: fit-content;
-} */
-
 .expandedDiv {
    width: 400px;
    white-space: wrap;
+}
+
+.expandedDiv h2 {
+   margin-top: 7px;
+}
+
+.expandedDiv p {
+   margin-top: 7px;
 }
 
 .month {
@@ -150,20 +155,46 @@
 
 
 
-
 .experienceContainer {
-   background-color: khaki;
    height: 100%;
    width: 40%;
    display: flex;
    flex-direction: column;
    justify-content: start;
    align-items: center;
+   /* margin-left: 30px;
+   margin-right: 30px; */
+   /* border: 1px solid black; */
+   /* border-radius: 10px; */
+   /* background-color: khaki; */
 }
 
-#workContainer h3 {
-   margin-bottom: 20px;
+.experienceContainer h3 {
+   margin-top: 25px;
+   margin-bottom: 15px;
 }
+
+.placeText {
+   font-weight: normal;
+   font-style: italic;
+}
+
+.experienceDescription {
+   font-weight: normal;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+#workListContainer {
+   margin-left: 150px;
+   margin-right: -20px;
+}
+
+#eduListContainer {
+   margin-right: 150px;
+   margin-left: -20px;
+}
+
 
 /* #educationContainer {
    background-color: aqua;
@@ -175,30 +206,104 @@
    display: grid;
    gap: 10px;
    width: 100%;
-   overflow-y: scroll;
+   overflow-y: auto;
 }
 
 
 
 .expRow {
    display: grid;
-   grid-template-columns: 1fr 15px 2fr;
+   grid-template-columns: 38fr 15px 62fr;
    width: 100%;
 }
 
 .timeCell {
    text-align: right;
    margin-right: 10px;
+   margin-left: 10px;
 }
 
 .clickArrow {
-   margin-top: 1.5px;
+   margin-top: 2px;
+   height: 12px;
+   width: 12px;
 }
 
 .titleCell {
    /* width: 100%; */
+   margin-left: 5px;
+   font-weight: bold;
+}
+
+.rotateArrow {
+   animation: arrowRotation 0.2s ease-in-out forwards;
+}
+
+.rerotateArrow {
+   animation: arrowRerotation 0.2s ease-in-out forwards;
+}
+
+@keyframes arrowRotation {
+   from {
+      rotate: 0deg;
+      margin-top: 0px;
+      margin-right: 0px;
+   }
+   to {
+      rotate: 90deg;
+      margin-top: 3px;
+      margin-right: 7px;
+   }
+}
+
+@keyframes arrowRerotation {
+   from {
+      rotate: 90deg;
+      margin-top: 3px;
+      margin-right: 7px;
+   }
+   to {
+      rotate: 0deg;
+      margin-top: 0px;
+      margin-right: 0px;
+   }
 }
 
 .hidden {
    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+   #allExperienceContainer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height:90%;
+      margin-top: 0px;
+   }
+
+   .experienceContainer {
+      width: 100%;
+   }
+
+   #experienceSection {
+      justify-content: start;
+   }
+
+   #experienceSection h1 {
+      margin-top: 10px;
+   }
+
+   #workListContainer {
+      height: 55%;
+      margin-left: 0;
+      margin-right: 0;
+   }
+
+   #eduListContainer  {
+      height: 45%;
+      margin-right: 0;
+      margin-left: 0;
+   }
 }

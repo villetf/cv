@@ -4,19 +4,50 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
- } 
+} 
+
+
+::-webkit-scrollbar {
+   width: 5px;
+   height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-track {
+   /* background: #f1f1f1; */
+   border-radius: 10px;
+}
+
+html {
+   background-color: rgb(197,213,230);
+}
 
 html, body {
    height: 100%;
    overflow-x: hidden;
    font-family: "Inter Tight", sans-serif;
    font-optical-sizing: auto;
+   scroll-behavior: smooth;
  }
 
 section {
    height: 97%;
    display: flex;
    flex-direction: column;
+   /* scroll-margin-top: 30px; */
+}
+
+section h1 {
+   font-weight: normal;
+   font-size: 30px;
 }
 
 #nameSection {
@@ -90,16 +121,59 @@ header {
    font-size: x-large;
 }
 
-#githubSection, #experienceSection {
+#githubSection, #experienceSection, #contactSection {
    justify-content: center;
    align-items: center;
    flex-direction: column;
 }
 
+#contactSection {
+   height: 100%;
+}
+
+.flex {
+   display: flex;
+}
+
+#contactTitle {
+   font-size: 50px;
+}
+
+.logoDiv {
+   width: 150px;
+   justify-content: space-evenly;
+}
+
+.logoDiv a {
+   color: black;
+
+}
+
+.logoDiv a i {
+   width: 20px;
+   height: 20px;
+   font-size: 40px;
+}
+
+.contactInfo {
+   font-size: 25px;
+   margin: 0 10px 30px 10px;
+}
+
+.letter {
+   margin-top: 5px;
+}
+
+
 
 @media screen and (min-width: 768px) {
    section {
       flex-direction: row;
+      scroll-margin-top: 30px;
+   }
+
+   #contactSection {
+      height: 97%;
    }
 
    .leftHalf {
@@ -126,5 +200,9 @@ header {
 
    #introText {
       font-size: xx-large;
+   }
+
+   #contactSection {
+      flex-direction: row;
    }
 }
