@@ -157,7 +157,8 @@ function addEventDetails(element, data) {
    const workPinDiv = createNewElement('div', null, null, 'flex', expandedDiv);
    const workPin = createNewElement('i', null, null, 'fa-solid fa-map-pin', workPinDiv);
    const workPlace = createNewElement('h4', data.place, null, null, createNewElement('i', null, null, null, workPinDiv));
-   const workDescription = createNewElement('p', data.description, null, null, expandedDiv);
+   const workDescription = createNewElement('p', null, null, 'workDescription', expandedDiv);
+   workDescription.innerHTML = data.description;
 }
 
 // Justera eventbredd

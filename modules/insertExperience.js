@@ -18,7 +18,8 @@ function insertExperience(experienceList, container, title) {
       const arrow = createNewElement('i', null, null, 'fa-solid fa-angle-right clickArrow', expRow);
       const titleCell = createNewElement('div', item.title, null, 'titleCell', expRow);
       const placeText = createNewElement('p', item.place, null, 'placeText', titleCell);
-      const description = createNewElement('p', item.description, null, 'hidden experienceDescription', titleCell);
+      const description = createNewElement('p', null, null, 'hidden experienceDescription', titleCell);
+      description.innerHTML = item.description;
 
       expRow.onclick = () => {
          description.classList.toggle('hidden');
