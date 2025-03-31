@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+   font-family: 'Menlo';
+   src: url('/data/Menlo-Regular.ttf') format('truetype');
+}
 
 * {
    margin: 0;
@@ -36,7 +40,8 @@ html, body {
    font-family: "Inter Tight", sans-serif;
    font-optical-sizing: auto;
    scroll-behavior: smooth;
- }
+   color:white;
+}
 
 section {
    height: 97%;
@@ -54,6 +59,29 @@ section h1 {
    margin-top: 2%;
 }
 
+#typewriterDiv {
+   position: absolute;
+   overflow: visible;
+   top: -90px;
+   text-align: right;
+   /* text-wrap: wrap; */
+   right: 0;
+   /* font-family: 'Courier New', Courier, monospace; */
+   font-family: 'Menlo';
+   font-size: 12px;
+}
+
+#blinkingCursor {
+   color: #7b7b7b;
+   font-size: 50px;
+   transform: translateX(-6px);
+   display: inline-block;
+}
+
+.hiddenCursor {
+   opacity: 0;
+}
+
 .halves {
    flex-basis: 50%;
    min-width: none;
@@ -67,25 +95,30 @@ section h1 {
 
 
 .leftHalf {
-   background-color: pink;
+   /* background-color: #FFEFD7; */
+   background-color: #1A1A1A;
    order: 2;
 }
 
 .rightHalf {
    /* background-color: rgb(205, 236, 250); */
-   background-color: rgb(197,213,230);
+   background-color: #1A1A1A;
+   /* background-color: #020408; */
    order: 1;
 }
 
 #nameText {
    font-weight: 400;
    font-size: 50px;
+   height: 60px;
 }
 
 #nameSubtext {
    font-weight: 400;
    font-size: 25px;
    margin-top: 10px;
+   height: 30px;
+   color: #ff5934;
 }
 
 #portrait {
@@ -102,7 +135,7 @@ header {
    display: flex;
    justify-content: space-evenly;
    padding-top: 10px;
-   background-color: rgb(197,213,230);
+   background-color: #fff9e2;
 }
 
 .icon {
@@ -117,7 +150,7 @@ header {
 
 #introText {
    text-align: center;
-   margin: 0 20vw;
+   margin: 0 5vw;
    font-size: x-large;
 }
 
@@ -127,8 +160,17 @@ header {
    flex-direction: column;
 }
 
+#experienceSection {
+   color:#1A1A1A;
+}
+
 #contactSection {
    height: 100%;
+   color:#1A1A1A;
+}
+
+#leftContactHalf {
+   flex-direction: row;
 }
 
 .flex {
@@ -137,11 +179,25 @@ header {
 
 #contactTitle {
    font-size: 50px;
+   /* width: 350px; */
+   text-align: left;
+   display: inline;
+}
+
+#contactTitleParent {
+   width: 370px;
+   text-align: left;
+   margin-left: 150px;
+}
+
+#mailPhoneDiv {
+   margin-bottom: 30px;
 }
 
 .logoDiv {
-   width: 150px;
-   justify-content: space-evenly;
+   /* width: 150px; */
+   width: 100%;
+   justify-content: space-around;
 }
 
 .logoDiv a {
@@ -185,8 +241,9 @@ header {
    }
 
    #portrait {
-      height: 50vh;
+      height: 60vh;
       width: auto;
+      margin-right: 15%;
    }
    
    .halves div {
@@ -200,9 +257,14 @@ header {
 
    #introText {
       font-size: xx-large;
+      margin: 0 20vw;
    }
 
    #contactSection {
       flex-direction: row;
+   }
+
+   .logoDiv {
+      width: 70%;
    }
 }

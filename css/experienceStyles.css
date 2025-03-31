@@ -1,5 +1,6 @@
 #experienceSection h1 {
    margin-bottom: 10px;
+   margin-top: 50px;
 }
 
 #radioDiv {
@@ -20,7 +21,7 @@
    height: 75%;
    display: flex;
    justify-content: center;
-   margin-top: 50px;
+   /* margin-top: 50px; */
 }
 
 #contentContainer {
@@ -53,9 +54,9 @@
    width: 100%;
 }
 
-.eventHolder {
+/* .eventHolder {
    background-color: darkgoldenrod;
-}
+} */
 
 .yearHolder {
    overflow: visible;
@@ -68,7 +69,7 @@
 .eventMarker {
    position: absolute;
    bottom: 100%;
-   background-color: black;
+   background-color: #111111;
    color: white;
    padding: 4px;
    border-radius: 4px;
@@ -89,6 +90,10 @@
    min-width: fit-content;
    animation: eventHeight 0.4s ease-in-out forwards;
    overflow: hidden;
+}
+
+.workDescription a {
+   color: lightblue;
 }
 
 .collapseEvent {
@@ -122,7 +127,7 @@
 .month {
    text-align: center;
    font-size: 12px;
-   background: lightgray;
+   background: #a8c4e2;
    padding: 2px;
    overflow: visible;
    white-space: nowrap;
@@ -215,6 +220,7 @@
    display: grid;
    grid-template-columns: 38fr 15px 62fr;
    width: 100%;
+   margin-bottom: 5px;
 }
 
 .timeCell {
@@ -292,7 +298,7 @@
    }
 
    #experienceSection h1 {
-      margin-top: 10px;
+      margin-top: 10px;      
    }
 
    #workListContainer {
