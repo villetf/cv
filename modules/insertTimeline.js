@@ -44,7 +44,7 @@ export async function insertTimeline(workExperience, education) {
    const allMonthOne = document.querySelectorAll('[month="1"]');
    allMonthOne.forEach(monthElement => {
       if (monthElement.classList.contains('month')) {
-         monthElement.style.borderLeft = '1px solid black';
+         monthElement.style.borderLeft = '1px solid #fff9e2';
          monthElement.innerText = monthElement.getAttribute('year');
          monthElement.classList.add('january');
       }
