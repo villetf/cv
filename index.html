@@ -4,8 +4,6 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Vilhelm Fontell</title>
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script> -->
    <link rel="stylesheet" href="/css/mainStyles.css">
    <link rel="stylesheet" href="/css/githubStyles.css">
    <link rel="stylesheet" href="/css/experienceStyles.css">
@@ -21,26 +19,26 @@
       <a href="#contactSection"><i class="fa-solid fa-envelope icon fa-lg"></i></a>
    </header>
 
-   <section id="nameSection" style="background-color: red";>
+   <section id="nameSection">
       <div class="leftHalf halves">
-         <div>
-            <h1 id="nameText">Vilhelm Fontell</h1>
-            <h3 id="nameSubtext">Webbutvecklare</h3>
+         <div style="position: relative; width: 308px; margin-left: 15%;">
+            <div id="typewriterDiv"></div>
+            <h1 id="nameText"></h1>
+            <h3 id="nameSubtext"></h3>
          </div>
       </div>
       
       <div class="rightHalf halves">
-         <img id="portrait" src="images/porträtt.png" alt="En bild på Vilhelm">
+         <img id="portrait" src="images/porträtt (kopia).png" alt="En bild på Vilhelm">
       </div>
    </section>
 
-   <section id="introTextSection" style="background-color: blue;">
+   <section id="introTextSection" style="background-color: #1A1A1A;">
       <p id="introText">
-         Jag heter Vilhelm, och jag är en webbutvecklingsstudent baserad i Jönköping. Det viktigaste för mig är att alltid fortsätta lära mig och att alltid tänka kreativt, och jag tror att man med de egenskaperna kan lösa alla problem som finns. Jag vill bygga webbapplikationer som både förenklar och förbättrar människors liv och som man i efterhand undrar hur man har kunnat klara sig utan.</p>
-   </section>
+         Jag heter Vilhelm och jag är en webbutvecklingsstudent baserad i Jönköping. Det viktigaste för mig är att alltid tänka kreativt och att alltid försöka lära mig mer, och jag tror att man genom att göra det kan lösa alla problem som finns. Jag vill bygga webbapplikationer som både <span style="color: #FF3A0E;">förenklar</span> och <span style="color: #FF3A0E;">förbättrar</span> människors liv, sådana man i efterhand undrar hur man har kunnat klara sig utan.</section>
 
-   <section id="experienceSection" style="background-color: green;">
-      <h1>Min erfarenhet</h1>
+   <section id="experienceSection" style="background-color: #fff9e2;">
+      <h1>Vad jag gjort</h1>
       <p id="showAsText">Visa som:</p>
       <div id="radioDiv">
          <input type="radio" id="timelineRadio" name="viewSelection" checked>
@@ -52,18 +50,20 @@
       </div>
    </section>
 
-   <section id="githubSection" style="background-color: #020408;">
-      <h1>Mina repon</h1>
+   <section id="githubSection" style="background-color: #1A1A1A;">
+      <h1>Vad jag skrivit</h1>
       <div id="githubContainer"></div>
    </section>
 
-   <section id="contactSection" style="background-color: yellow;">
+   <section id="contactSection" style="background-color: #fff9e2;">
       
-      <div class="halves">
-         <h1 id="contactTitle">Vill du veta mer? Kontakta mig!</h1>
+      <div class="halves" id="leftContactHalf">
+         <div id="contactTitleParent">
+            <h1 id="contactTitle"></h1>
+         </div>
       </div>
       <div class="halves">
-         <div class="flex">
+         <div id="mailPhoneDiv" class="flex logoDiv">
             <div class="flex contactInfo">
                <i class="fa-solid fa-envelope letter"></i>
                <p><a href="mailto:ville@fontell.se">ville@fontell.se</a></p>
