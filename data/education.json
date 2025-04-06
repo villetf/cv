@@ -1,6 +1,6 @@
 [
    {
-      "title": "YH-utbildning – Webbutvecklare .NET",
+      "title": "YH-utbildning, Webbutvecklare .NET",
       "place": "Jönköping University/Campus Värnamo",
       "duration": "aug 2024-juni 2026",
       "startTime": "2024-08",
@@ -8,7 +8,7 @@
       "description": "Praktiskt inriktad utbildning med fokus på att utveckla moderna webbapplikationer. Backend byggs i .NET-plattformen, medan frontend utvecklas med moderna JavaScript-ramverk. Stort fokus ligger på samarbete, kodkvalitet och branschrelevanta arbetsmetoder, exempelvis agilt arbete och versionshantering."
    },
    {
-      "title": "Militär grundutbildning – Informationssystemsassistent",
+      "title": "Militär grundutbildning, informationssystemsassistent",
       "place": "Bodens Artilleriregemente, Boden",
       "duration": "aug 2020–maj 2021",
       "startTime": "2020-08",
@@ -16,12 +16,12 @@
       "description": "Utbildades i driftsättning, underhåll och felsökning av mobila IT-system på bataljonsnivå, som del av min värnplikt. Lärde mig att hantera nätverk, kommunikationsutrustning och informationssäkerhet i krävande miljöer."
    },
    {
-      "title": "Estetiskt program – Spetsutbildning i film & regi",
+      "title": "Estetiskt program, spetsutbildning i film & regi",
       "place": "S:t Eriks Gymnasium, Stockholm",
       "duration": "aug 2017–juni 2020",
       "startTime": "2017-08",
       "endTime": "2020-05",
-      "description": "Fördjupad utbildning inom filmskapande med professionella arbetsmetoder. Tränades i hela produktionsprocessen, från idé och manus till inspelning, redigering och färdig film. Tog gymnasieexamen med grundläggande högskolebehörighet."
+      "description": "Fördjupad utbildning inom filmskapande med professionella arbetsmetoder. Tränades i hela produktionsprocessen, från idé och manus till inspelning, redigering och färdig film. Tog gymnasieexamen med högskolebehörighet."
    },
    {
       "title": "Grundskola",
