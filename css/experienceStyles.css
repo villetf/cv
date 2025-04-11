@@ -41,7 +41,7 @@ input[type="radio"] {
    margin-right: 5px;
 }
 
-#timelineRadioLabel {
+.customRadio {
    margin-right: 15px;
 }
 
@@ -332,7 +332,7 @@ input[type="radio"]:checked + .radioMark {
    }
 
    #experienceSection h1 {
-      margin-top: 10px;      
+      margin-top: 50px;      
    }
 
    #workListContainer {
