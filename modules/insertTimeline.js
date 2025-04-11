@@ -1,4 +1,3 @@
-import { getEducation, getWorkExperience } from './apiCalls.js';
 import { createNewElement } from './createNewElement.js';
 
 
@@ -74,7 +73,7 @@ export async function insertTimeline(workExperience, education) {
       const correctCell = document.getElementById(`${experience.startTime}-${experience.type}Holder`);
       const eventDiv = createNewElement('div', null, null, 'eventDiv', correctCell);
       const marker = createNewElement('div', null, `${experience.startTime}-marker`, `eventMarker ${experience.type}Marker`, eventDiv);
-      const markerText = createNewElement('p', experience.title, null, 'markerText', marker);
+      createNewElement('p', experience.title, null, 'markerText', marker);
       marker.onmouseenter = () => expandEvent(marker, experience);
       adjustEventWidth(experience, marker, correctCell);
       checkOverflow(marker);
@@ -141,7 +140,7 @@ function expandEvent(element, data) {
       }, 500);
       element.classList.add('collapseEvent');
       element.firstChild.remove();
-      const newText = createNewElement('p', data.title, null, 'markerText', element);
+      createNewElement('p', data.title, null, 'markerText', element);
       checkOverflow(element);
       clearTimeout(timeout);
    };
@@ -151,12 +150,12 @@ function expandEvent(element, data) {
 function addEventDetails(element, data) {
    const expandedDiv = createNewElement('div', null, null, 'expandedDiv', element);
    const workCalendarDiv = createNewElement('div', null, null, 'flex', expandedDiv);
-   const workCalendar = createNewElement('i', null, null, 'fa-solid fa-calendar-days', workCalendarDiv);
-   const workTime = createNewElement('h4', data.duration, null, null, workCalendarDiv);
-   const workTitle = createNewElement('h2', data.title, null, null, expandedDiv);
+   createNewElement('i', null, null, 'fa-solid fa-calendar-days', workCalendarDiv);
+   createNewElement('h4', data.duration, null, null, workCalendarDiv);
+   createNewElement('h2', data.title, null, null, expandedDiv);
    const workPinDiv = createNewElement('div', null, null, 'flex', expandedDiv);
-   const workPin = createNewElement('i', null, null, 'fa-solid fa-map-pin', workPinDiv);
-   const workPlace = createNewElement('h4', data.place, null, null, createNewElement('i', null, null, null, workPinDiv));
+   createNewElement('i', null, null, 'fa-solid fa-map-pin', workPinDiv);
+   createNewElement('h4', data.place, null, null, createNewElement('i', null, null, null, workPinDiv));
    const workDescription = createNewElement('p', null, null, 'workDescription', expandedDiv);
    workDescription.innerHTML = data.description;
 }

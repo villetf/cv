@@ -14,9 +14,9 @@ export async function createGithubDiv(repo) {
 
    const topicsDiv = createNewElement('div', null, 'topicsDiv', null, topicsWrapper);
    repo.topics.forEach(topic => {
-      const topicDiv = createNewElement('div', topic, 'topicDiv', null, topicsDiv);
+      createNewElement('div', topic, 'topicDiv', null, topicsDiv);
    });
-   const repoName = createNewElement('h3', repo.name, null, null, contentWrapper);
+   createNewElement('h3', repo.name, null, null, contentWrapper);
 
    const updatedAtDate = new Date(repo.updated_at);
    const localeUpdatedAtDate = updatedAtDate.toLocaleString(undefined, {
@@ -27,9 +27,9 @@ export async function createGithubDiv(repo) {
       minute: '2-digit'
    });
 
-   const lastUpdated = createNewElement('p', `Senast uppdaterad: ${localeUpdatedAtDate}`, null, 'lastUpdated', contentWrapper);
+   createNewElement('p', `Senast uppdaterad: ${localeUpdatedAtDate}`, null, 'lastUpdated', contentWrapper);
    if (repo.description) {
-      const repoDesc = createNewElement('p', repo.description, null, 'repoDesc', contentWrapper);
+      createNewElement('p', repo.description, null, 'repoDesc', contentWrapper);
    }
 
    const languagesContainer = createNewElement('div', null, null, 'languagesContainer', githubDiv);
@@ -54,6 +54,6 @@ export async function createGithubDiv(repo) {
       const languageDiv = createNewElement('div', null, 'languageDiv', null, languagesTextContainer);
       const languageDot = createNewElement('div', null, 'languageDot', null, languageDiv);
       languageDot.style.backgroundColor = languageColor;
-      const languageTitle = createNewElement('div', `${language} (${languageAmount}%)`, null, 'languageText', languageDiv);
+      createNewElement('div', `${language} (${languageAmount}%)`, null, 'languageText', languageDiv);
    }
 }

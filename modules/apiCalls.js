@@ -9,8 +9,8 @@ export function getGithubRepos() {
          return response.json();
       })
       .then((data) => {
-         return data.sort((a, b) => {
-            return new Date(b.updated_at) - new Date(a.updated_at);
+         return data.sort((first, second) => {
+            return new Date(second.updated_at) - new Date(first.updated_at);
          });
       });
 }

@@ -1,4 +1,3 @@
-import { getEducation, getWorkExperience } from './apiCalls.js';
 import { createNewElement } from './createNewElement.js';
 
 export async function insertExperienceList(workExp, education) {
@@ -14,10 +13,10 @@ function insertExperience(experienceList, container, title) {
    const expTable = createNewElement('div', null, 'expTable', null, container);
    for (const item of experienceList) {
       const expRow = createNewElement('div', null, null, 'expRow', expTable);
-      const timeCell = createNewElement('div', item.duration, null, 'timeCell', expRow);
+      createNewElement('div', item.duration, null, 'timeCell', expRow);
       const arrow = createNewElement('i', null, null, 'fa-solid fa-angle-right clickArrow', expRow);
       const titleCell = createNewElement('div', item.title, null, 'titleCell', expRow);
-      const placeText = createNewElement('p', item.place, null, 'placeText', titleCell);
+      createNewElement('p', item.place, null, 'placeText', titleCell);
       const description = createNewElement('p', null, null, 'hidden experienceDescription', titleCell);
       description.innerHTML = item.description;
 
