@@ -1,5 +1,5 @@
 export function getGithubRepos() {
-   return fetch('https://api.github.com/users/villetf/repos', keyheaders)
+   return fetch('https://api.github.com/users/villetf/repos')
       .then((response) => response.json())
       .then((data) => {
          return data.sort((a, b) => {
@@ -9,7 +9,7 @@ export function getGithubRepos() {
 }
 
 export function getRepoLanguages(url) {
-   return fetch(url, keyheaders)
+   return fetch(url)
       .then(response => response.json());
 }
 
