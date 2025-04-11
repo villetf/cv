@@ -3,7 +3,7 @@ export function getGithubRepos() {
       .then((response) => response.json())
       .then((data) => {
          return data.sort((a, b) => {
-            return new Date(b.created_at) - new Date(a.created_at);
+            return new Date(b.updated_at) - new Date(a.updated_at);
          });
       });
 }
