@@ -4,9 +4,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Vilhelm Fontell</title>
-   <link rel="stylesheet" href="/css/mainStyles.css">
-   <link rel="stylesheet" href="/css/githubStyles.css">
-   <link rel="stylesheet" href="/css/experienceStyles.css">
+   <link rel="stylesheet" href="css/mainStyles.css">
+   <link rel="stylesheet" href="css/githubStyles.css">
+   <link rel="stylesheet" href="css/experienceStyles.css">
    <script type="module" src="script.js" defer></script>
    <script src="https://kit.fontawesome.com/9e560ee8e6.js" crossorigin="anonymous"></script>
 </head>
@@ -21,7 +21,7 @@
 
    <section id="nameSection">
       <div class="leftHalf halves">
-         <div style="position: relative; width: 308px; margin-left: 15%;">
+         <div id="nameDiv">
             <div id="typewriterDiv"></div>
             <h1 id="nameText"></h1>
             <h3 id="nameSubtext"></h3>
@@ -29,7 +29,7 @@
       </div>
       
       <div class="rightHalf halves">
-         <img id="portrait" src="images/porträtt (kopia).png" alt="En bild på Vilhelm">
+         <img id="portrait" src="images/portratt.png" alt="En bild på Vilhelm">
       </div>
    </section>
 
@@ -38,20 +38,27 @@
          Jag heter Vilhelm och jag är en webbutvecklingsstudent baserad i Jönköping. Det viktigaste för mig är att alltid tänka kreativt och att alltid försöka lära mig mer, och jag tror att man genom att göra det kan lösa alla problem som finns. Jag vill bygga webbapplikationer som både <span style="color: #FF3A0E;">förenklar</span> och <span style="color: #FF3A0E;">förbättrar</span> människors liv, sådana man i efterhand undrar hur man har kunnat klara sig utan.</section>
 
    <section id="experienceSection" style="background-color: #fff9e2;">
-      <h1>Vad jag gjort</h1>
+      <h1>Vad jag har gjort</h1>
       <p id="showAsText">Visa som:</p>
       <div id="radioDiv">
-         <input type="radio" id="timelineRadio" name="viewSelection" checked>
-         <label for="timelineRadio">Tidslinje</label>
-         <input type="radio" id="listRadio" name="viewSelection">
-         <label for="listRadio">Lista</label>
+         <label for="timelineRadio" class="customRadio" id="timelineRadioLabel">
+            <input type="radio" id="timelineRadio" name="viewSelection" checked>
+            <span class="radioMark"></span>
+            Tidslinje
+         </label>
+
+         <label for="listRadio" class="customRadio">
+            <input type="radio" id="listRadio" name="viewSelection">
+            <span class="radioMark"></span>
+            Lista
+         </label>
       </div>
       <div id="allExperienceContainer">
       </div>
    </section>
 
    <section id="githubSection" style="background-color: #1A1A1A;">
-      <h1>Vad jag skrivit</h1>
+      <h1>Vad jag har skrivit</h1>
       <div id="githubContainer"></div>
    </section>
 
@@ -62,7 +69,7 @@
             <h1 id="contactTitle"></h1>
          </div>
       </div>
-      <div class="halves">
+      <div class="halves" id="contactRightHalf">
          <div id="mailPhoneDiv" class="flex logoDiv">
             <div class="flex contactInfo">
                <i class="fa-solid fa-envelope letter"></i>
@@ -75,8 +82,8 @@
          </div>
 
          <div class="flex logoDiv">
-            <a href="https://www.linkedin.com/in/vilhelm-fontell/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/villetf" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vilhelm-fontell/" target="_blank" class="contactLogo"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/villetf" target="_blank" class="contactLogo"><i class="fa-brands fa-github"></i></a>
          </div>
       </div>
 
