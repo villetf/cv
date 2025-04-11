@@ -143,7 +143,7 @@ input[type="radio"]:checked + .radioMark {
 
 
 .expandedDiv {
-   width: 400px;
+   width: 450px;
    white-space: wrap;
 }
 
@@ -156,14 +156,14 @@ input[type="radio"]:checked + .radioMark {
 }
 
 .workMarker {
-   background-color: #c5d2df;
+   background-color: #acc8e5;
    color: #1A1A1A;
 }
 
 .eduMarker {
-   /* background-color: #f59166; */
+   background-color: #f59166;
    /* background-color: #f59386; */
-   background-color: #C58590;
+   /* background-color: #C58590; */
    color: #1A1A1A;
 }
 
