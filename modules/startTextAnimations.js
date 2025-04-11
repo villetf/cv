@@ -8,21 +8,47 @@ export function startTextAnimations() {
       setTimeout(() => {
          startTyping('Vilhelm Fontell', document.getElementById('nameText'), 100);
          setTimeout(() => {
-            startTyping('Webbutvecklare', document.getElementById('nameSubtext'), 50);
+            document.getElementById('typewriterDiv').remove();
             setTimeout(() => {
-               document.getElementById('typewriterDiv').remove();
-            }, 800);
-         }, 1500);
+               startTyping('Webbutvecklare', document.getElementById('nameSubtext'), 50);
+               setTimeout(() => {
+               }, 800);
+            }, 1500);
+         }, 50);
       }, 2500);
    } else {
       document.getElementById('nameText').innerText = 'Vilhelm Fontell';
       document.getElementById('nameSubtext').innerText = 'Webbutvecklare';
    }
 
-   startContactAnimation();
-   setInterval(() => {
-      startContactAnimation();
-   }, 12000);
+
+   let contactInterval;
+   startContactInterval();
+   document.onvisibilitychange = () => {
+      if (document.visibilityState === 'hidden') {
+         stopContactInterval();
+      } else {
+         stopContactInterval();
+         startContactInterval();
+      }
+   };
+
+   function startContactInterval() {
+      if (!document.getElementById('contactTitle').innerText) {
+         startContactAnimation();
+      }
+
+      if (!contactInterval) {
+         contactInterval = setInterval(() => {
+            startContactAnimation();
+         }, 12000);
+      }
+   }
+
+   function stopContactInterval() {
+      clearInterval(contactInterval);
+      contactInterval = null;
+   }
 }
 
 
