@@ -1,6 +1,7 @@
 
 #githubSection h1 {
    margin-bottom: 50px;
+   margin-top: 80px;
    /* color: white; */
    color: #F0F6FC;
 }
@@ -17,7 +18,7 @@
    justify-content: center;
    
    width: 85%;
-   height: 75%;   
+   height: 89%;   
    overflow-y: scroll;
    flex-wrap: wrap;
 }
@@ -136,6 +137,11 @@
    border-radius: 5px;
    background-color: red;
    margin-right: 3px;
+}
+
+#githubError {
+   color: red;
+   font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
