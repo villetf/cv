@@ -122,7 +122,7 @@ function expandEvent(element, data) {
          const computedStyle = window.getComputedStyle(element);
          const matrix = new DOMMatrix(computedStyle.transform);
          const currentY = matrix.m42;
-         element.style.transform = `translate(-${(408 - element.getBoundingClientRect().width)}px, ${currentY}px)`;
+         element.style.transform = `translate(-${(458 - element.getBoundingClientRect().width)}px, ${currentY}px)`;
       }
       addEventDetails(element, data);
       if (element.classList.contains('eduMarker')) {
