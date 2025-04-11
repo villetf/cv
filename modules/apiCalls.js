@@ -19,11 +19,11 @@ export function getGithubLangColor() {
 }
 
 export async function getWorkExperience() {
-   return fetch('/data/workExp.json')
+   return fetch('data/workExp.json')
       .then(res => res.json());
 }
 
 export async function getEducation() {
-   return fetch('/data/education.json')
+   return fetch('data/education.json')
       .then(res => res.json());
 }

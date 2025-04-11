@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
    font-family: 'Menlo';
-   src: url('/data/Menlo-Regular.ttf') format('truetype');
+   src: url('data/Menlo-Regular.ttf') format('truetype');
 }
 
 * {
@@ -31,7 +31,7 @@
 }
 
 html {
-   background-color: rgb(197,213,230);
+   background-color: #1A1A1A;
 }
 
 html, body {
@@ -59,10 +59,16 @@ section h1 {
    margin-top: 2%;
 }
 
+#nameDiv {
+   position: relative;
+   width: 308px;
+   margin-left: 0;
+}
+
 #typewriterDiv {
    position: absolute;
    overflow: visible;
-   top: -90px;
+   top: 0px;
    text-align: right;
    /* text-wrap: wrap; */
    right: 0;
@@ -133,7 +139,7 @@ header {
    bottom: 0;
    width: 100%;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    padding-top: 10px;
    background-color: #fff9e2;
 }
@@ -179,30 +185,33 @@ header {
 
 #contactTitle {
    font-size: 50px;
-   /* width: 350px; */
    text-align: left;
    display: inline;
 }
 
 #contactTitleParent {
    width: 370px;
-   text-align: left;
-   margin-left: 150px;
+   text-align: center;
 }
 
 #mailPhoneDiv {
-   margin-bottom: 30px;
+   margin-bottom: 5px;
 }
 
+
 .logoDiv {
-   /* width: 150px; */
    width: 100%;
-   justify-content: space-around;
+   justify-content: center;
+   margin-right: 0;
 }
 
 .logoDiv a {
    color: black;
+}
 
+.contactLogo {
+   margin-left: 20px;
+   margin-right: 20px;
 }
 
 .logoDiv a i {
@@ -240,6 +249,10 @@ header {
       order: 2;
    }
 
+   #nameDiv {
+      margin-left: 15%;
+   }
+
    #portrait {
       height: 60vh;
       width: auto;
@@ -253,6 +266,7 @@ header {
    header {
       top: 0;
       height: fit-content;
+      justify-content: space-evenly;
    }
 
    #introText {
@@ -264,7 +278,14 @@ header {
       flex-direction: row;
    }
 
+   #contactTitleParent {
+      margin-left: 150px;
+      margin-bottom: 30px;
+      text-align: left;
+   }
+
    .logoDiv {
       width: 70%;
+      margin-right: 100px;
    }
 }
