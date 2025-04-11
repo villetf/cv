@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
    font-family: 'Menlo';
-   src: url('data/Menlo-Regular.ttf') format('truetype');
+   src: url('../data/Menlo-Regular.ttf') format('truetype');
 }
 
 * {
@@ -70,9 +70,7 @@ section h1 {
    overflow: visible;
    top: 0px;
    text-align: right;
-   /* text-wrap: wrap; */
    right: 0;
-   /* font-family: 'Courier New', Courier, monospace; */
    font-family: 'Menlo';
    font-size: 12px;
 }
