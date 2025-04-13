@@ -2,7 +2,6 @@
 #githubSection h1 {
    margin-bottom: 50px;
    margin-top: 80px;
-   /* color: white; */
    color: #F0F6FC;
 }
 
@@ -30,12 +29,9 @@
    justify-content: center;
    width: 350px;
    height: 233px;
-   /* background-color: #0E1116; */
    background-color: #111111;
    color: white;
-   /* margin: 10px; */
    position: relative;
-   /* border: 1px solid #3E444C; */
 }
 
 .contentWrapper {
@@ -44,14 +40,10 @@
    align-items: start;
    justify-content: center;
    min-height: 140px;
-   /* flex-grow: 1; */
-   /* margin-top: 10%; */
-   /* padding-bottom: 40px; */
 }
 
 .contentWrapper p, .languageText {
    color: #9198A1;
-   /* color: red; */
 }
 
 .githubDiv h3, .githubDiv p {
@@ -83,8 +75,8 @@
    padding: 4px 7px;
    border-radius: 20px;
    margin-right: 3px;
-   /* margin-left: 5%; */
-   font-size: 13px;
+   font-size: 11px;
+   word-break: keep-all;
 }
 
 .lastUpdated {
@@ -92,7 +84,6 @@
 }
 
 .repoDesc {
-   /* font-size: 12.5px; */
    font-size: 13px;
 }
 
@@ -101,7 +92,6 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   /* margin-bottom: 15px; */
    position:absolute;
    bottom: 15px;
    left:0;
@@ -177,5 +167,9 @@
    .topicsWrapper {
       top: 17px;
       left: 15px;
+   }
+
+   #topicDiv {
+      font-size: 13px;
    }
 }

@@ -14,14 +14,12 @@ input[type="radio"] {
 }
 
 #radioDiv label {
-   /* margin-right: 15px; */
    display: flex;
    align-items: center;
 }
 
 .customRadio {
    position: relative;
-   /* padding-left: 30px; */
    cursor: pointer;
    display: inline-block;
    user-select: none;
@@ -29,9 +27,6 @@ input[type="radio"] {
 
 .radioMark {
    display: inline-block;
-   /* position: absolute; */
-   /* left: 0;
-   top: 2px; */
    height: 15px;
    width: 15px;
    border-radius: 50%;
@@ -55,7 +50,6 @@ input[type="radio"]:checked + .radioMark {
    height: 75%;
    display: flex;
    justify-content: center;
-   /* margin-top: 50px; */
 }
 
 #contentContainer {
@@ -116,7 +110,6 @@ input[type="radio"]:checked + .radioMark {
 }
 
 .expandedEvent {
-   /* height: 200px; */
    z-index: 5;
    min-width: fit-content;
    animation: eventHeight 0.4s ease-in-out forwards;
@@ -162,8 +155,6 @@ input[type="radio"]:checked + .radioMark {
 
 .eduMarker {
    background-color: #f59166;
-   /* background-color: #f59386; */
-   /* background-color: #C58590; */
    color: #1A1A1A;
 }
 
@@ -222,13 +213,13 @@ input[type="radio"]:checked + .radioMark {
 
 .placeText {
    font-weight: normal;
-   font-style: italic;
 }
 
 .experienceDescription {
    font-weight: normal;
    margin-top: 5px;
    margin-bottom: 5px;
+   font-size: 15px;
 }
 
 #workListContainer {
@@ -270,7 +261,6 @@ input[type="radio"]:checked + .radioMark {
 }
 
 .titleCell {
-   /* width: 100%; */
    margin-left: 5px;
    font-weight: bold;
 }
@@ -332,18 +322,26 @@ input[type="radio"]:checked + .radioMark {
    }
 
    #experienceSection h1 {
-      margin-top: 50px;      
+      margin-top: 40px;      
    }
 
    #workListContainer {
-      height: 55%;
+      height: 50%;
       margin-left: 0;
       margin-right: 0;
    }
 
    #eduListContainer  {
-      height: 45%;
+      height: 50%;
       margin-right: 0;
       margin-left: 0;
+   }
+
+   .timeCell {
+      font-size: 13px;
+   }
+
+   .expRow {
+      grid-template-columns: 33fr 15px 66fr;
    }
 }

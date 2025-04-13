@@ -26,7 +26,6 @@
 }
 
 ::-webkit-scrollbar-track {
-   /* background: #f1f1f1; */
    border-radius: 10px;
 }
 
@@ -47,7 +46,6 @@ section {
    height: 97%;
    display: flex;
    flex-direction: column;
-   /* scroll-margin-top: 30px; */
 }
 
 section h1 {
@@ -99,15 +97,12 @@ section h1 {
 
 
 .leftHalf {
-   /* background-color: #FFEFD7; */
    background-color: #1A1A1A;
    order: 2;
 }
 
 .rightHalf {
-   /* background-color: rgb(205, 236, 250); */
    background-color: #1A1A1A;
-   /* background-color: #020408; */
    order: 1;
 }
 
@@ -126,8 +121,6 @@ section h1 {
 }
 
 #portrait {
-   /* height: 50vh; */
-   /* width: 100vw; */
    height: 60vh;
 }
 
