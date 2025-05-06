@@ -117,7 +117,7 @@ input[type="radio"]:checked + .radioMark {
 }
 
 .workDescription a {
-   color: lightblue;
+   color: #FF3A0E;
 }
 
 .collapseEvent {
