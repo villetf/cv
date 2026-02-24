@@ -8,6 +8,22 @@
       "description": "Praktiskt inriktad utbildning med fokus på att utveckla moderna webbapplikationer. Backend byggs i .NET-plattformen, medan frontend utvecklas med moderna JavaScript-ramverk. Stort fokus ligger på samarbete, kodkvalitet och branschrelevanta arbetsmetoder, exempelvis agilt arbete och versionshantering."
    },
    {
+      "title": "Tillämpad Internet of Things, introduktion, 7,5 hp",
+      "place": "Linnéuniversitetet",
+      "duration": "juni 2025-juli 2025",
+      "startTime": "2025-06",
+      "endTime": "2025-07",
+      "description": "Sommarkurs med fokus på grundläggande IoT. Under kursen byggdes IoT-enheter utifrån mikrokontrollern Raspberry Pi Pico, som sedan programmerades i MicroPython."
+   },
+   {
+      "title": "Datorer och programmering, 10 hp",
+      "place": "Uppsala Universitet",
+      "duration": "juni 2025-aug 2025",
+      "startTime": "2025-06",
+      "endTime": "2025-08",
+      "description": "Sommarkurs med fokus på programmeringsspråket C++. Under kursen gavs en introduktion till C++ och dess grundläggande koncept."
+   },
+   {
       "title": "Militär grundutbildning, informationssystemsassistent",
       "place": "Bodens Artilleriregemente, Boden",
       "duration": "aug 2020–maj 2021",
