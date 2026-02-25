@@ -174,48 +174,43 @@ function adjustEventPositions(type) {
    let merits;
    let unit;
    let extraMovement;
-   let operator;
    if (type == 'work') {
       merits = document.querySelectorAll('.workMarker');
       unit = '-';
       extraMovement = 0;
-      operator = '+';
    } else {
       merits = document.querySelectorAll('.eduMarker');
       unit = '';
       extraMovement = 25;
-      operator = '-';
    }
 
    merits.forEach(element => {
       element.style.transform = '';
    });
 
-   const elementEndpoints = [];
+   const placedItems = [];
    merits.forEach(merit => {
       const rect = merit.getBoundingClientRect();
 
-      let matchingElements = 0;
-      elementEndpoints.forEach(element => {
-         // Beräknar med hjälp av caluclateDynamicOp för att kunna välja plus eller minus dynamiskt
-         const elementBottom = calculateDynamicOp(element.bottom, extraMovement + ((5 * (matchingElements + 1))), operator);
-         // Kollar ifall merit har mindre vänsterutrymme än element (merits vänsterkant är vänster om elements vänsterkant),
-         // samt ifall de är på samma nivå i höjdled
-         if (rect.left < element.left && rect.bottom == elementBottom) {
-            matchingElements++;
+      // Hitta vilka nivåer som är blockerade av överlappande element
+      const blockedLevels = new Set();
+      placedItems.forEach(item => {
+         if (rect.left < item.right) {
+            blockedLevels.add(item.level);
          }
       });
 
-      merit.style.transform = `translateY(${unit}${(rect.height * matchingElements) + extraMovement + ((5 * (matchingElements + 1)))}px)`;
+      // Välj lägsta lediga nivå
+      let level = 0;
+      while (blockedLevels.has(level)) {
+         level++;
+      }
 
+      merit.style.transform = `translateY(${unit}${(rect.height * level) + extraMovement + (5 * (level + 1))}px)`;
       // Lägger till varje element i listan över tidigare element
-      elementEndpoints.push({
-         left: rect.left + rect.width,
-         bottom: merit.getBoundingClientRect().bottom
+      placedItems.push({
+         level,
+         right: rect.left + rect.width
       });
    });
-}
-
-function calculateDynamicOp(elementBottom, extraMovement, operator) {
-   return operator === '+' ? elementBottom + extraMovement : elementBottom - extraMovement;
 }
